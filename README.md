@@ -17,7 +17,7 @@ A real-time collaborative code editor built to enable multiple users to write, e
 
 ### Frontend
 - **React.js** with **Vite**
-- **@uiw/react-codemirror** for the code editor
+- **@monaco-editor/react** for the code editor
 - **Socket.IO** for real-time communication
 - **Tailwind CSS** for styling
 
@@ -37,15 +37,15 @@ cd codeshare
 
 ### 2. Install Dependencies
 
-#### For client:
+#### For frontend:
 ```bash
-cd client
+cd frontend
 npm install
 ```
 
-#### For server:
+#### For backend:
 ```bash
-cd ../server
+cd ../backend
 npm install
 ```
 
@@ -53,17 +53,18 @@ npm install
 
 Open two terminals:
 
-**Terminal 1 – Server:**
+**Terminal 1 – backend:**
 
 ```bash
-cd server
-npm run dev
+cd backend
+cd src
+nodemon index.js
 ```
 
-**Terminal 2 – Client:**
+**Terminal 2 – frontend:**
 
 ```bash
-cd client
+cd frontend
 npm run dev
 ```
 
@@ -73,18 +74,14 @@ The application will start at `http://localhost:5173/` (or as indicated).
 
 ```
 codeshare/
-├── client/               # React frontend
+├── frontend/               # React frontend
 │   └── src/
 │       └── components/   # Editor, Chat, Layouts
-├── server/               # Node.js backend with Socket.IO
+├── backend/               # Node.js backend with Socket.IO
 │   └── index.js          # Main server file
 ├── README.md             # Project documentation
 └── package.json
 ```
-
-## 📸 Screenshots
-
-> Add screenshots or a short demo video/GIF here to help users see the app in action.
 
 ## 🧩 Future Enhancements
 
@@ -110,4 +107,4 @@ This project is licensed under the MIT License.
 
 ---
 
-### 👨‍💻 Developed by [Harshad Solanki](https://github.com/Harshad1109)
+### 👨‍💻 Developed by [Harshadkumar Solanki](https://github.com/Harshad1109)
