@@ -1,0 +1,82 @@
+/* frontend/src/pages/styles/CodeEditor.css */
+.code-editor-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  min-width: 700px;
+  background-color: var(--background-dark);
+  overflow: hidden;
+}
+
+.content-wrapper {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+.main-content {
+  flex: 1;
+  min-height: 0;
+}
+
+.main-content .allotment-container {
+  height: 100% !important;
+}
+
+.view-container {
+  height: 100%;
+  opacity: 0;
+  animation: zoomIn 0.3s ease-in-out forwards;
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.98); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.view-container.visible {
+  opacity: 1;
+}
+
+.room-view-wrapper {
+  width: 0;
+  opacity: 0;
+  transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  border-left: 2px solid var(--border-color);
+  overflow: hidden;
+}
+
+.room-view-wrapper.visible {
+  width: 280px; /* A bit wider */
+  opacity: 1;
+}
+
+.users-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--background-dark);
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow-y: auto;
+  gap: 1rem;
+  width: 280px;
+}
+
+.my-video-container, .remote-videos-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Allotment Splitter Styling */
+.sash {
+  background-color: var(--surface-color) !important;
+  --sash-size: 6px !important;
+  transition: background-color 0.2s ease !important;
+}
+
+.sash:hover {
+  background-color: var(--primary-color) !important;
+}
