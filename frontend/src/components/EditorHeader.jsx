@@ -78,7 +78,7 @@ const EditorHeader = ({
         <NavLink to="/" className="navbar-logo">
           <FaCode className="navbar-icon" />
           <h1>Code</h1>
-          <span className="title-sec">Together</span>
+          <span className="title-sec">Share</span>
         </NavLink>
       </div>
 

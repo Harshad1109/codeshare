@@ -37,7 +37,7 @@ const Navbar = () => {
           <FaCode className="navbar-icon" />
           <div className="navbar-title">
             <div className="name1">Code</div>
-            <div className="name2">Together</div>
+            <div className="name2">Share</div>
           </div>
         </Link>
 

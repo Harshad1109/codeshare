@@ -11,14 +11,16 @@ export const LANGUAGE_VERSIONS = {
 };
 
 export const CODE_SNIPPETS = {
-  c: `#include <stdio.h>
+  c: `// Welcome to CodeShare!
+  #include <stdio.h>
 
 int main() {
     printf("Hello, World!\\n");
     return 0;
 }`,
 
-  cpp: `#include <bits/stdc++.h>
+  cpp: `// Welcome to CodeShare!
+  #include <bits/stdc++.h>
 using namespace std;
 
 void greet(const string& name) {
@@ -30,24 +32,28 @@ int main() {
     return 0;
 }`,
 
-  java: `public class Main {
+  java: `// Welcome to CodeShare!
+  public class Main {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
     }
 }`,
 
-  python: `def greet(name):
+  python: `# Welcome to CodeShare!
+  def greet(name):
     print(f"Hello, {name}!")
 
 greet("World")`,
 
-  javascript: `function greet(name) {
+  javascript: `// Welcome to CodeShare!
+  function greet(name) {
   console.log("Hello, " + name + "!");
 }
 
 greet("World");`,
 
-  typescript: `type Greeter = {
+  typescript: `// Welcome to CodeShare!
+  type Greeter = {
   (name: string): void;
 };
 
@@ -57,7 +63,8 @@ const greet: Greeter = (name) => {
 
 greet("World");`,
 
-  csharp: `using System;
+  csharp: `// Welcome to CodeShare!
+  using System;
 
 class Program {
     static void Main() {
@@ -66,6 +73,7 @@ class Program {
 }`,
 
   php: `<?php
+  // Welcome to CodeShare!
 function greet($name) {
     echo "Hello, " . $name . "!";
 }
@@ -74,6 +82,7 @@ greet("World");
 ?>`,
 
   sql: `/* 
+  Welcome to CodeShare!
   Welcome to SQL!
   Try running a query against a sample database.
 */

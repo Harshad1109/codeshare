@@ -106,7 +106,7 @@ const Signup = () => {
           </Link>
           <div className="title">
             <div className="title1">Code</div>
-            <div className="title2">Together</div>
+            <div className="title2">Share</div>
           </div>
           <p className="subtitle">Create an account to start collaborating</p>
         </div>

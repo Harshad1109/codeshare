@@ -95,7 +95,7 @@ const Login = () => {
           </Link>
           <div className="title">
             <div className="title1">Code</div>
-            <div className="title2">Together</div>
+            <div className="title2">Share</div>
           </div>
           <p className="subtitle">Welcome back! Please log in to your account.</p>
         </div>

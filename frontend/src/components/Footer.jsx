@@ -17,7 +17,7 @@ const Footer = () => {
           </a>
         </div>
         <p className="footer-copyright">
-          © {new Date().getFullYear()} CodeTogether. All rights reserved.
+          © {new Date().getFullYear()} CodeShare. All rights reserved.
         </p>
       </div>
     </footer>
