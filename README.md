@@ -7,7 +7,7 @@ A real-time collaborative code editor built to enable multiple users to write, e
 ## 🚀 Features
 
 - ✅ Real-time code editing with WebSockets
-- 🎨 Syntax highlighting using CodeMirror
+- 🎨 Syntax highlighting using monaco-editor
 - 🧑‍💻 Multi-user collaboration
 - 💬 Built-in chat for live communication
 - 🕓 Version control: track changes and revisions
